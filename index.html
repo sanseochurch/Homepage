@@ -3,10 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title> 산서교회 </title>
-  <h1> 산서교회 </h1>
+  <h1><center><img src="logo.jpg" align="center" width="80"><center></h1>
+  <h1> <a href="index.html"> <center> 산서교회 </center></a></h1>
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+    a{text-decoration:none;}
+    a:link{color:black;}
+    a:visited{color:black;}
+    a:hover{color:black;}
+    a:active{color:gray;}
+
+    #topMenu {
+      height:30px;
+      width:500px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+
+    #topMenu ul li {
+      list-style:none;
+      color: white;
+      background-color:#6E6E6E;
+      float:left;
+      line-height: 30px;
+      vertical-align: middle;
+      text-align:center;
+    }
+
+    #topMenu .menuLink {
+      text-decoration:none;
+      color: white;
+      display:block;
+      width: 150px;
+      font-size:12px;
+      font-weight:bold;
+    }
+
+    #img1 {
+      width: 100%;
+      height: 800px;
+      background-attachment: fixed;
+      background-image: url('cross.jpg');
+      background-size: 100%;
+      position:relative;
+      overflow: scroll;
+    }
+
+    #img1 .text1{
+      width:500px;
+      height:500px;
+      background-color: white;
+      opacity: 0.5;
+      position:absolute;
+      left:50%;
+      top:50%;
+      margin-left: -250px;
+      margin-top: -250px;
+    }
+  </style>
 </head>
 
 <body>
+  <nav id = "topMenu" >
+    <ul>
+      <li><a class="menuLink" href="#">메인</a></li>
+      <li>|</li>
+      <li><a class="menuLink" href="#">소식</a></li>
+      <li>|</li>
+      <li><a class="menuLink" href="#">커뮤니티</a></li>
+    </ul>
+  </nav>
+
+  <div id="img1">
+    <div class="text1">
+    </div>
+  </div>
+
+  <img src="bible.jpg" style="width:50%; height:auto;">
+
 </body>
 
 </html>
