@@ -3,18 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title> 산서교회 </title>
-  <h1><center><img src="logo.png" width="20px"></center></h1>
-  <h1 style ="line-height:0px;"><a href="index.html"> <center> 산서교회 </center></a></h1>
+  <div style="margin-bottom:0;"><center><img src="logo.png" width="20px"></center></div>
+  <h1 id="title"><a href="index.html"> <center> 산서교회 </center></a></h1>
   <link rel="stylesheet" href="HeadStyle.css">
 
   <style>
-    html,body{
-      scroll-behavior: smooth;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
+
     #img1 {
       position:relative;
       color:white;
@@ -22,7 +16,7 @@
       width: 100%;
       height:100vh;
       background-attachment: fixed;
-      background-image: url('cross.jpg');
+      background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('cross.jpg');
       background-size: cover ;
       background-repeat: no-repeat;
       overflow: scroll;
@@ -56,13 +50,17 @@
 
     #ask{
       float:left;
-      width:50%;
-      height:400px;
+      width:15%;
       position:relative;
       font-size: 30px;
       text-align: center;
       color:black;
-      padding-top:5%;
+      padding-top:5px;
+      padding-bottom:5px;
+      margin-left: 15%;
+      margin-top: 15%;
+      border-radius: 50px;
+      background-color: #F2F2F2;
     }
 
   </style>
@@ -80,7 +78,13 @@
   </nav>
 
   <div id="img1">
-    <h1 style="position:relative; top:17%; font-size:65px;"><center>WELCOME</center></h1>
+    <h1 style="position:relative; font-size:65px;"><center>WELCOME</center></h1>
+    <div>
+      <input type="image" name="vision" src="vision.png" width="4%">
+      <input type="image" name="goal" src="goal.png" width="4%">
+      <input type="image" name="time" src="time.png" width="4%">
+      <input type="image" name="ask" src="ask.png" width="4%">
+    </div>
     <div class="text">
       <div style="margin-top:5%;font-weight:bold; text-align:center; font-size:15px;">
         주여! 내가 주를 사랑하나이다. [시18:1]
@@ -88,28 +92,18 @@
       <div style="font-weight:bold; text-align:center; font-size:15px;">
         Lord, I will love you [Ps.18:1]
       </div>
-      <blockquote style="margin-left:17%;">
+      <blockquote style="margin-left:17%; line-height:150%;">
         <span style="font-size:35px; color:white;">1.</span> <span style="color:white;font-weight:bold;">주님을 신뢰하는 삶[막9:23]</span><br>
         <span style="font-size:35px; color:white;">2.</span> <span style="color:white;font-weight:bold;">주님과 교제하는 삶[고전1:9]</span><br>
         <span style="font-size:35px; color:white;">3.</span> <span style="color:white;font-weight:bold;">주께 영광 돌리는 삶[요3:30]</span><br>
         <span style="font-size:35px; color:white;">4.</span> <span style="color:white;font-weight:bold;">주님께 맡기는 삶[시37:5]</span>
       </blockquote>
+
     </div>
   </div>
-
+<!--
   <div id="img2">
-    예배시간
-    <!--
-    <div class="text">
-      <p style="font-size:15px; line-height:40px; margin-top:8%; margin-left:auto; margin-right:auto;">
-        주일예배 | 오전 11시<br>
-        찬양예배 | 오후 03시<br>
-        수요기도회 | 오후 07시<br>
-        새벽기도회 | 오전 04시 30분
-      </p>
-    </div>
-  -->
-    <p style="font-size:15px; line-height:40px;">
+    <p id="time" style="font-size:15px; line-height:40px;">
       주일예배 | 오전 11시<br>
       찬양예배 | 오후 03시<br>
       수요기도회 | 오후 07시<br>
@@ -121,6 +115,7 @@
   <span id="ask">
     문의
   </span>
+-->
 
 </body>
 
