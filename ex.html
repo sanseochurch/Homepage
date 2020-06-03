@@ -1,0 +1,158 @@
+<meta charset="utf-8"
+<input type="radio" id="aaa" name="abcd" value="00" onchange="setDisplay()"> AAA
+<input type="radio" id="bbb" name="abcd" value="10" onchange="setDisplay()"> BBB
+
+
+<script language ="javascript">
+  function ms(value){
+    if(value =='1'){
+      document.all.div1.style.display="";
+    }
+    else{
+      document.all.div1.style.display="none";
+    }
+  }
+  </script>
+
+  <input type="radio" name="useful" value="1" onclick="ms('1');">예
+  <input type="radio" name="useful" value="2" onclick="ms('2')">아니오
+
+<div id="div1" style="display:none;">
+  <input type="text" name="url">
+  </div>
+<style>
+  #img1{
+  background-color:grey;
+  text-align: center;
+}
+</style>
+<!------------------------------------------------------------------------------------------
+<script type="text/javascript">
+    function show_layer(div_name){
+      document.all.div_01.style.display="none";
+      document.all.div_02.style.display="none";
+      document.all.div_03.style.display="none";
+      document.all.div_04.style.display="none";
+
+      switch(div_name)
+      {
+        case '1':
+        document.all.div_01.style.display="";
+        break;
+        case '2':
+        document.all.div_02.style.display="";
+        break;
+        case '3':
+        document.all.div_03.style.display="";
+        break;
+        case '4':
+        document.all.div_04.style.display="";
+        break;
+      }
+    }
+</script>
+
+<div id="div_01">
+  <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:30px;">
+    <tr>
+      <td>메뉴 또는 탭 1</td>
+      <td><a href="javascript:show_layer('2');">메뉴 또는 탭 2</a></td>
+      <td><a href="javascript:show_layer('3');">메뉴 또는 탭 3</a></td>
+      <td><a href="javascript:show_layer('4');">메뉴 또는 탭 4</a></td>
+    </tr>
+    <tr><td colspan=4 align=center style='padding-top:20px;'>내용1</td></tr>
+  </table>
+</div>
+
+<div id="div_02" style="DISPLAY:none;">
+  <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:30px;">
+    <tr>
+      <td><a href="javascript:show_layer('1');">메뉴 또는 탭 1</a></td>
+      <td>메뉴 또는 탭 2</td>
+      <td><a href="javascript:show_layer('3');">메뉴 또는 탭 3</a></td>
+      <td><a href="javascript:show_layer('4');">메뉴 또는 탭 4</a></td>
+    </tr>
+    <tr><td colspan=4 align=center style='padding-top:20px;'>내용2</td></tr>
+  </table>
+</div>
+
+<div id="div_03" style="DISPLAY:none;">
+  <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:30px;">
+    <tr>
+      <td><a href="javascript:show_layer('1');">메뉴 또는 탭 1</a></td>
+      <td><a href="javascript:show_layer('2');">메뉴 또는 탭 2</a></td>
+      <td>메뉴 또는 탭 3</td>
+      <td><a href="javascript:show_layer('4');">메뉴 또는 탭 4</a></td>
+    </tr>
+    <tr><td colspan=4 align=center style='padding-top:20px;'>내용3</td></tr>
+  </table>
+</div>
+
+<div id="div_04" style="DISPLAY:none;">
+  <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:30px;">
+    <tr>
+      <td><a href="javascript:show_layer('1');">메뉴 또는 탭 1</a></td>
+      <td><a href="javascript:show_layer('2');">메뉴 또는 탭 2</a></td>
+      <td><a href="javascript:show_layer('3');">메뉴 또는 탭 3</a></td>
+      <td>메뉴 또는 탭 4</td>
+    </tr>
+    <tr><td colspan=4 align=center style='padding-top:20px;'>내용4</td></tr>
+  </table>
+</div>
+------------------------------------------------------------------------------------------------------->
+<div id="img1">
+    <h1 style="position:relative; font-size:65px;"><center>WELCOME</center></h1>
+    <div>
+      <input type="image" onclick="vision()" value="vision" src="vision.png" width="60px">
+      <input type="image" onclick="goal()" value="goal" src="goal.png" width="60px">
+      <input type="image" onclick="time()" value="time" src="time.png" width="60px">
+      <input type="image" onclick="ask()" value="ask" src="ask.png" width="60px">
+    </div>
+</div>
+
+<script>
+  function vision(){
+    document.all.div_01.style.display="";
+    document.all.div_02.style.display="none";
+    document.all.div_03.style.display="none";
+    document.all.div_04.style.display="none";
+  }
+
+  function goal(){
+    document.all.div_01.style.display="none";
+    document.all.div_02.style.display="";
+    document.all.div_03.style.display="none";
+    document.all.div_04.style.display="none";
+  }
+
+  function time(){
+    document.all.div_01.style.display="none";
+    document.all.div_02.style.display="none";
+    document.all.div_03.style.display="";
+    document.all.div_04.style.display="none";
+  }
+
+  function ask(){
+    document.all.div_01.style.display="none";
+    document.all.div_02.style.display="none";
+    document.all.div_03.style.display="none";
+    document.all.div_04.style.display="";
+  }
+
+</script>
+
+<div id="div_01" style="display:none;">
+  11111111111111
+</div>
+
+<div id="div_02" style="display:none;">
+  22222222222222
+</div>
+
+<div id="div_03" style="display:none;">
+  33333333333333
+</div>
+
+<div id="div_04" style="display:none;">
+  4444444444444
+</div>

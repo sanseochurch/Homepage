@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="HeadStyle.css">
 
   <style>
-
-    #img1 {
+    #img_01 {
       position:relative;
       color:white;
       font-size: 20px;
@@ -17,13 +16,13 @@
       height:100vh;
       background-attachment: fixed;
       background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('cross.jpg');
-      background-size: cover ;
+      background-size: cover;
       background-repeat: no-repeat;
       overflow: scroll;
       text-align: center;
     }
 
-    #img1 .text{
+    .text{
       width:440px;
       height:260px;
       background-color: rgba(100,100,100,0.5);
@@ -32,20 +31,6 @@
       top:35%;
       margin-left: -220px;
       text-align: left;
-    }
-
-    #img2 {
-      width: 50%;
-      height:100vh;
-      background-image: url('worship.jpg');
-      background-size: 100% ;
-      background-repeat: no-repeat;
-      text-align: center;
-      padding-top:15%;
-      color:white;
-      font-size: 40px;
-      font-weight:bold;
-      float:left;
     }
 
     #ask{
@@ -64,58 +49,103 @@
     }
 
   </style>
-</head>
 
-<body>
   <nav id = "topMenu" >
     <ul>
-      <li><a class="menuLink" href="#">소개</a></li>
+      <li><a class="menuLink" href="news/index.html">소개</a></li>
       <li>|</li>
-      <li><a class="menuLink" href="#">소식</a></li>
+      <li><a class="menuLink" href="/news/index.html">소식</a></li>
       <li>|</li>
-      <li><a class="menuLink" href="#">커뮤니티</a></li>
+      <li><a class="menuLink" href="/news/index.html">커뮤니티</a></li>
     </ul>
   </nav>
 
-  <div id="img1">
+</head>
+
+<body>
+
+<div id="img_01">
     <h1 style="position:relative; font-size:65px;"><center>WELCOME</center></h1>
     <div>
-      <input type="image" name="vision" src="vision.png" width="4%">
-      <input type="image" name="goal" src="goal.png" width="4%">
-      <input type="image" name="time" src="time.png" width="4%">
-      <input type="image" name="ask" src="ask.png" width="4%">
+      <input type="image" onclick="vision()" name="vision" src="vision.png" width="60px">
+      <input type="image" onclick="goal()" name="goal" src="goal.png" width="60px">
+      <input type="image" onclick="time()" name="time" src="time.png" width="60px">
+      <input type="image" onclick="ask()" name="ask" src="ask.png" width="60px">
     </div>
+
     <div class="text">
-      <div style="margin-top:5%;font-weight:bold; text-align:center; font-size:15px;">
-        주여! 내가 주를 사랑하나이다. [시18:1]
-      </div>
-      <div style="font-weight:bold; text-align:center; font-size:15px;">
-        Lord, I will love you [Ps.18:1]
-      </div>
-      <blockquote style="margin-left:17%; line-height:150%;">
-        <span style="font-size:35px; color:white;">1.</span> <span style="color:white;font-weight:bold;">주님을 신뢰하는 삶[막9:23]</span><br>
-        <span style="font-size:35px; color:white;">2.</span> <span style="color:white;font-weight:bold;">주님과 교제하는 삶[고전1:9]</span><br>
-        <span style="font-size:35px; color:white;">3.</span> <span style="color:white;font-weight:bold;">주께 영광 돌리는 삶[요3:30]</span><br>
-        <span style="font-size:35px; color:white;">4.</span> <span style="color:white;font-weight:bold;">주님께 맡기는 삶[시37:5]</span>
-      </blockquote>
+      <div id="div_01">
+        <div style="margin-top:10px;font-weight:bold; text-align:center; font-size:15px;">
+          주여! 내가 주를 사랑하나이다. [시18:1]<br>
+          Lord, I will love you [Ps.18:1]<br>
+          <div style=" line-height:150%; margin-top: 5%;  font-size:25px;">
+          꿈과 행복이 넘치는 교회<br>
+          사람을 살리고 키우는 교회<br>
+          지역사회와 함께하는 교회<br>
+          </div>
+        </div>
 
+      </div>
+
+      <div id="div_02" style="display:none; line-height:250%; margin-left:20%; margin-top: 5%;">
+        <span style="font-size:35px; color:white;">1.</span> <span style="color:white;font-weight:bold;">예수님을 사랑하라 [신6:5]</span><br>
+        <span style="font-size:35px; color:white;">2.</span> <span style="color:white;font-weight:bold;">교회를 사랑하라 [고전16:1]</span><br>
+        <span style="font-size:35px; color:white;">3.</span> <span style="color:white;font-weight:bold;">말씀을 사랑하라 [요삼1:6]</span><br>
+        <span style="font-size:35px; color:white;">4.</span> <span style="color:white;font-weight:bold;">영혼을 사랑하라 [벧전1:9]</span>
+      </div>
+
+      <div id="div_03" style="display:none; font-size:20px; line-height:50px; margin-left:25%; margin-top: 5%;">
+          주일예배 | 오전 11시 <br/>
+          찬양예배 | 오후 03시<br>
+          수요기도회 | 오후 07시<br>
+          새벽기도회 | 오전 04시 30분
+      </div>
+
+      <div id="div_04" style="display:none;">
+        문의
+      </div>
     </div>
   </div>
+
+</div>
+
+<script>
+  function vision(){
+    document.all.div_01.style.display="";
+    document.all.div_02.style.display="none";
+    document.all.div_03.style.display="none";
+    document.all.div_04.style.display="none";
+  }
+
+  function goal(){
+    document.all.div_01.style.display="none";
+    document.all.div_02.style.display="";
+    document.all.div_03.style.display="none";
+    document.all.div_04.style.display="none";
+  }
+
+  function time(){
+    document.all.div_01.style.display="none";
+    document.all.div_02.style.display="none";
+    document.all.div_03.style.display="";
+    document.all.div_04.style.display="none";
+  }
+
+  function ask(){
+    document.all.div_01.style.display="none";
+    document.all.div_02.style.display="none";
+    document.all.div_03.style.display="none";
+    document.all.div_04.style.display="";
+  }
+</script>
 <!--
-  <div id="img2">
-    <p id="time" style="font-size:15px; line-height:40px;">
-      주일예배 | 오전 11시<br>
-      찬양예배 | 오후 03시<br>
-      수요기도회 | 오후 07시<br>
-      새벽기도회 | 오전 04시 30분
-    </p>
-
-  </div>
-
-  <span id="ask">
-    문의
-  </span>
--->
+<div style="margin-left:17%; line-height:150%;">
+  <span style="font-size:35px; color:white;">1.</span> <span style="color:white;font-weight:bold;">주님을 신뢰하는 삶[막9:23]</span><br>
+  <span style="font-size:35px; color:white;">2.</span> <span style="color:white;font-weight:bold;">주님과 교제하는 삶[고전1:9]</span><br>
+  <span style="font-size:35px; color:white;">3.</span> <span style="color:white;font-weight:bold;">주께 영광 돌리는 삶[요3:30]</span><br>
+  <span style="font-size:35px; color:white;">4.</span> <span style="color:white;font-weight:bold;">주님께 맡기는 삶[시37:5]</span>
+</div>
+---------------------------------------------------------------------->
 
 </body>
 
