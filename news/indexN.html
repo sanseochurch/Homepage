@@ -19,28 +19,39 @@
 
 <body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="../book.js"></script>
-<style>
-      #book{width:800px; height:540px; border:1px solid #eee; margin:50px;}
-    #book .page{text-align:center;}
-</style>
-
+<script src="../turnjs4/lib/turn.min.js"></script>
 <script>
-    $(function(){
-        $('#book').book({
-            speed:15,
-            bookgb: '#666'
-        });
-    });
+$(document).ready(function(){
+  $('#book').turn();
+});
 </script>
 
+<style>
+    #book{
+      width:800px;
+      height:600px;
+      left:50%;
+      margin-left: -400px;
+      float:left;
+    }
+
+    #book .turn-page{width: 300px; height:300px; background-color:pink;}
+
+    .page{
+      width:100%;
+      height: 100%;
+    }
+</style>
+
+  <div>
+    6월7일 주보
+  </div>
+
     <div id="book">
-        <div class='page'><img src="week1.jpg"></div>
-        <div class='page'><img src=""></div>
-        <div class='page'><img src=""></div>
-        <div class='page'><img src=""></div>
-        <div class='page'><img src=""></div>
-        <div class='page'><img src=""></div>
+        <div class='page'><img class="page" src="week1.jpg"></div>
+        <div class='page'><img class="page" src="week2.jpg"></div>
+        <div class='page'><img class="page" src="week3.jpg"></div>
+        <div class='page'><img class="page" src="week4.jpg"></div>
     </div>
 
 </body>
