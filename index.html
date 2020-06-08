@@ -8,6 +8,18 @@
   <link rel="stylesheet" href="HeadStyle.css">
 
   <style>
+
+    #text{
+      width:400px;
+      height:260px;
+      background-color: rgba(255,255,255,0.3);
+      position:absolute;
+      left:50%;
+      top:250px;
+      margin-left: -200px;
+      text-align: left;
+    }
+
     #img_01 {
       position:relative;
       color:white;
@@ -20,17 +32,6 @@
       background-repeat: no-repeat;
       overflow: scroll;
       text-align: center;
-    }
-
-    .text{
-      width:440px;
-      height:260px;
-      background-color: rgba(100,100,100,0.5);
-      position:absolute;
-      left:50%;
-      top:35%;
-      margin-left: -220px;
-      text-align: left;
     }
 
     #ask{
@@ -49,52 +50,48 @@
     }
 
   </style>
-
-  <nav id = "topMenu" >
-    <ul>
-      <li><a class="menuLink" href="about/indexA.html">소개</a></li>
+  <nav id= "topMenu">
+  <ul>
+    <li><a class="menuLink" href="about/indexA.html">소개</a>
+      </li>
       <li>|</li>
       <li><a class="menuLink" href="news/indexN.html">소식</a></li>
       <li>|</li>
       <li><a class="menuLink" href="community/indexC.html">커뮤니티</a></li>
     </ul>
   </nav>
-
 </head>
 
 <body>
 
 <div id="img_01">
-    <h1 style="position:relative; font-size:65px;"><center>WELCOME</center></h1>
+    <h1 onmouseover="welcome()" style="position:relative; font-family:'default'; font-size:65px;"><center>WELCOME</center></h1>
     <div>
-      <input type="image" onclick="vision()" name="vision" src="vision.png" width="60px">
-      <input type="image" onclick="goal()" name="goal" src="goal.png" width="60px">
-      <input type="image" onclick="time()" name="time" src="time.png" width="60px">
-      <input type="image" onclick="ask()" name="ask" src="ask.png" width="60px">
+      <input type="image" onmouseover="vision()" name="vision" src="vision.png" width="60px">
+      <input type="image" onmouseover="goal()" name="goal" src="goal.png" width="60px">
+      <input type="image" onmouseover="time()" name="time" src="time.png" width="60px">
+      <input type="image" onmouseover="ask()" name="ask" src="ask.png" width="60px">
+    </div>
+    <div id="first" style="font-weight:800;">
+    주여! 내가 주를 사랑하나이다. [시18:1]<br>
+    Lord, I will love you [Ps.18:1]<br>
     </div>
 
-    <div class="text">
-      <div id="div_01">
-        <div style="margin-top:10px;font-weight:bold; text-align:center; font-size:15px;">
-          주여! 내가 주를 사랑하나이다. [시18:1]<br>
-          Lord, I will love you [Ps.18:1]<br>
-          <div style=" line-height:150%; margin-top: 5%;  font-size:25px;">
+    <div id="text" style="display:none; font-weight:bold;">
+      <div id="div_01" style="text-align:center; margin-top:60px;">
           꿈과 행복이 넘치는 교회<br>
           사람을 살리고 키우는 교회<br>
           지역사회와 함께하는 교회<br>
-          </div>
-        </div>
-
       </div>
 
-      <div id="div_02" style="display:none; line-height:250%; margin-left:20%; margin-top: 5%;">
+      <div id="div_02" style="display:none; line-height:250%; margin-left:15%; margin-top: 5%;">
         <span style="font-size:35px; color:white;">1.</span> <span style="color:white;font-weight:bold;">예수님을 사랑하라 [신6:5]</span><br>
         <span style="font-size:35px; color:white;">2.</span> <span style="color:white;font-weight:bold;">교회를 사랑하라 [고전16:1]</span><br>
         <span style="font-size:35px; color:white;">3.</span> <span style="color:white;font-weight:bold;">말씀을 사랑하라 [요삼1:6]</span><br>
         <span style="font-size:35px; color:white;">4.</span> <span style="color:white;font-weight:bold;">영혼을 사랑하라 [벧전1:9]</span>
       </div>
 
-      <div id="div_03" style="display:none; font-size:20px; line-height:50px; margin-left:25%; margin-top: 5%; font-weight:bold; ">
+      <div id="div_03" style="display:none; font-size:20px; line-height:50px; margin-left:20%; margin-top: 5%; font-weight:bold; ">
           주일예배 | 오전 11시 <br/>
           찬양예배 | 오후 03시<br>
           수요기도회 | 오후 07시<br>
@@ -111,31 +108,48 @@
 
 <script>
   function vision(){
+    document.all.text.style.display="";
     document.all.div_01.style.display="";
     document.all.div_02.style.display="none";
     document.all.div_03.style.display="none";
     document.all.div_04.style.display="none";
+    document.all.first.style.display="none";
   }
 
   function goal(){
+    document.all.text.style.display="";
     document.all.div_01.style.display="none";
     document.all.div_02.style.display="";
     document.all.div_03.style.display="none";
     document.all.div_04.style.display="none";
+    document.all.first.style.display="none";
   }
 
   function time(){
+    document.all.text.style.display="";
     document.all.div_01.style.display="none";
     document.all.div_02.style.display="none";
     document.all.div_03.style.display="";
     document.all.div_04.style.display="none";
+    document.all.first.style.display="none";
   }
 
   function ask(){
+    document.all.text.style.display="";
     document.all.div_01.style.display="none";
     document.all.div_02.style.display="none";
     document.all.div_03.style.display="none";
     document.all.div_04.style.display="";
+    document.all.first.style.display="none";
+  }
+
+  function welcome(){
+    document.all.text.style.display="none";
+    document.all.div_01.style.display="none";
+    document.all.div_02.style.display="none";
+    document.all.div_03.style.display="none";
+    document.all.div_04.style.display="none";
+    document.all.first.style.display="";
   }
 </script>
 <!--

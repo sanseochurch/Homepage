@@ -1,158 +1,146 @@
-<meta charset="utf-8"
-<input type="radio" id="aaa" name="abcd" value="00" onchange="setDisplay()"> AAA
-<input type="radio" id="bbb" name="abcd" value="10" onchange="setDisplay()"> BBB
+<meta charset="utf-8">
 
+  <figure class="snip1200">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+  <figcaption>
+    <p>I say, if your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+    <div class="heading">
+      <h2>My<span> Hobby</span></h2>
+    </div>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="snip1200 hover">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample31.jpg" alt="sq-sample31" />
+  <figcaption>
+    <p>The inside of my head was exploding with fireworks. Fortunately, my last thought turned out the lights when it left.</p>
+    <div class="heading">
+      <h2>My<span> Work</span></h2>
+    </div>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="snip1200">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample32.jpg" alt="sq-sample32" />
+  <figcaption>
+    <p>That's the difference between me and the rest of the world! Happiness isn't good enough for me! I demand euphoria! </p>
+    <div class="heading">
+      <h2>My <span> Dream</span></h2>
+    </div>
+  </figcaption>
+  <a href="#"></a>
+</figure>
 
-<script language ="javascript">
-  function ms(value){
-    if(value =='1'){
-      document.all.div1.style.display="";
-    }
-    else{
-      document.all.div1.style.display="none";
-    }
-  }
-  </script>
-
-  <input type="radio" name="useful" value="1" onclick="ms('1');">예
-  <input type="radio" name="useful" value="2" onclick="ms('2')">아니오
-
-<div id="div1" style="display:none;">
-  <input type="text" name="url">
-  </div>
 <style>
-  #img1{
-  background-color:grey;
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+figure.snip1200 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 310px;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
   text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+}
+figure.snip1200 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+figure.snip1200 img {
+  max-width: 100%;
+  position: relative;
+  opacity: 0.9;
+}
+figure.snip1200 figcaption {
+  position: absolute;
+  top: 45%;
+  left: 7%;
+  right: 7%;
+  bottom: 45%;
+  border: 1px solid white;
+  border-width: 1px 1px 0;
+}
+figure.snip1200 .heading {
+  overflow: hidden;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+figure.snip1200 h2 {
+  display: table;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+figure.snip1200 h2 span {
+  font-weight: 800;
+}
+figure.snip1200 h2:before,
+figure.snip1200 h2:after {
+  position: absolute;
+  display: block;
+  width: 1000%;
+  height: 1px;
+  content: '';
+  background: white;
+  top: 50%;
+}
+figure.snip1200 h2:before {
+  left: -1000%;
+}
+figure.snip1200 h2:after {
+  right: -1000%;
+}
+figure.snip1200 p {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+  opacity: 0;
+  line-height: 1.6em;
+  font-size: 0.9em;
+}
+figure.snip1200 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.snip1200:hover img,
+figure.snip1200.hover img {
+  opacity: 0.25;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.snip1200:hover figcaption,
+figure.snip1200.hover figcaption {
+  top: 7%;
+  bottom: 7%;
+}
+figure.snip1200:hover p,
+figure.snip1200.hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
 </style>
-<!------------------------------------------------------------------------------------------
-<script type="text/javascript">
-    function show_layer(div_name){
-      document.all.div_01.style.display="none";
-      document.all.div_02.style.display="none";
-      document.all.div_03.style.display="none";
-      document.all.div_04.style.display="none";
-
-      switch(div_name)
-      {
-        case '1':
-        document.all.div_01.style.display="";
-        break;
-        case '2':
-        document.all.div_02.style.display="";
-        break;
-        case '3':
-        document.all.div_03.style.display="";
-        break;
-        case '4':
-        document.all.div_04.style.display="";
-        break;
-      }
-    }
-</script>
-
-<div id="div_01">
-  <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:30px;">
-    <tr>
-      <td>메뉴 또는 탭 1</td>
-      <td><a href="javascript:show_layer('2');">메뉴 또는 탭 2</a></td>
-      <td><a href="javascript:show_layer('3');">메뉴 또는 탭 3</a></td>
-      <td><a href="javascript:show_layer('4');">메뉴 또는 탭 4</a></td>
-    </tr>
-    <tr><td colspan=4 align=center style='padding-top:20px;'>내용1</td></tr>
-  </table>
-</div>
-
-<div id="div_02" style="DISPLAY:none;">
-  <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:30px;">
-    <tr>
-      <td><a href="javascript:show_layer('1');">메뉴 또는 탭 1</a></td>
-      <td>메뉴 또는 탭 2</td>
-      <td><a href="javascript:show_layer('3');">메뉴 또는 탭 3</a></td>
-      <td><a href="javascript:show_layer('4');">메뉴 또는 탭 4</a></td>
-    </tr>
-    <tr><td colspan=4 align=center style='padding-top:20px;'>내용2</td></tr>
-  </table>
-</div>
-
-<div id="div_03" style="DISPLAY:none;">
-  <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:30px;">
-    <tr>
-      <td><a href="javascript:show_layer('1');">메뉴 또는 탭 1</a></td>
-      <td><a href="javascript:show_layer('2');">메뉴 또는 탭 2</a></td>
-      <td>메뉴 또는 탭 3</td>
-      <td><a href="javascript:show_layer('4');">메뉴 또는 탭 4</a></td>
-    </tr>
-    <tr><td colspan=4 align=center style='padding-top:20px;'>내용3</td></tr>
-  </table>
-</div>
-
-<div id="div_04" style="DISPLAY:none;">
-  <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:30px;">
-    <tr>
-      <td><a href="javascript:show_layer('1');">메뉴 또는 탭 1</a></td>
-      <td><a href="javascript:show_layer('2');">메뉴 또는 탭 2</a></td>
-      <td><a href="javascript:show_layer('3');">메뉴 또는 탭 3</a></td>
-      <td>메뉴 또는 탭 4</td>
-    </tr>
-    <tr><td colspan=4 align=center style='padding-top:20px;'>내용4</td></tr>
-  </table>
-</div>
-------------------------------------------------------------------------------------------------------->
-<div id="img1">
-    <h1 style="position:relative; font-size:65px;"><center>WELCOME</center></h1>
-    <div>
-      <input type="image" onclick="vision()" value="vision" src="vision.png" width="60px">
-      <input type="image" onclick="goal()" value="goal" src="goal.png" width="60px">
-      <input type="image" onclick="time()" value="time" src="time.png" width="60px">
-      <input type="image" onclick="ask()" value="ask" src="ask.png" width="60px">
-    </div>
-</div>
-
-<script>
-  function vision(){
-    document.all.div_01.style.display="";
-    document.all.div_02.style.display="none";
-    document.all.div_03.style.display="none";
-    document.all.div_04.style.display="none";
-  }
-
-  function goal(){
-    document.all.div_01.style.display="none";
-    document.all.div_02.style.display="";
-    document.all.div_03.style.display="none";
-    document.all.div_04.style.display="none";
-  }
-
-  function time(){
-    document.all.div_01.style.display="none";
-    document.all.div_02.style.display="none";
-    document.all.div_03.style.display="";
-    document.all.div_04.style.display="none";
-  }
-
-  function ask(){
-    document.all.div_01.style.display="none";
-    document.all.div_02.style.display="none";
-    document.all.div_03.style.display="none";
-    document.all.div_04.style.display="";
-  }
-
-</script>
-
-<div id="div_01" style="display:none;">
-  11111111111111
-</div>
-
-<div id="div_02" style="display:none;">
-  22222222222222
-</div>
-
-<div id="div_03" style="display:none;">
-  33333333333333
-</div>
-
-<div id="div_04" style="display:none;">
-  4444444444444
-</div>

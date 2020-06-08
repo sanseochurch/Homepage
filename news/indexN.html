@@ -18,10 +18,30 @@
 </head>
 
 <body>
-  <div style="text-align:center; margin-top:30%;">
-    소식페이지<br>
-    준비중입니다.
-  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../book.js"></script>
+<style>
+      #book{width:800px; height:540px; border:1px solid #eee; margin:50px;}
+    #book .page{text-align:center;}
+</style>
+
+<script>
+    $(function(){
+        $('#book').book({
+            speed:15,
+            bookgb: '#666'
+        });
+    });
+</script>
+
+    <div id="book">
+        <div class='page'><img src="week1.jpg"></div>
+        <div class='page'><img src=""></div>
+        <div class='page'><img src=""></div>
+        <div class='page'><img src=""></div>
+        <div class='page'><img src=""></div>
+        <div class='page'><img src=""></div>
+    </div>
 
 </body>
 

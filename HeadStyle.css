@@ -25,11 +25,12 @@ html body{
   a:hover{color:black;}
   a:active{color:gray;}
 
+
   #topMenu {
     height:30px;
     width:380px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    list-style: none;
   }
 
   #topMenu ul li {
@@ -41,6 +42,7 @@ html body{
     text-align:center;
   }
 
+
   #topMenu .menuLink {
     text-decoration:none;
     color: #656463;
@@ -49,3 +51,32 @@ html body{
     font-size:12px;
     font-weight:bold;
   }
+/*
+  #sub_menu{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    position: absolute;
+    left:17%;
+    top:20px;
+    visibility: hidden;
+  }
+
+  #sub_menu li {
+    float:none;
+  }
+
+  #sub_menu .subLink{
+    text-decoration:none;
+    color: #656463;
+    display:block;
+    font-size:12px;
+    font-weight:bold;
+    float: left;
+    transition-duration:1s;
+  }
+
+  #topMenu li:hover #sub_menu{
+    visibility: visible;
+  }
+  */
