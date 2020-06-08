@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title> 산서교회 </title>
-  <div style="margin-bottom:0;"><center><img src="../logo.png" width="20px"></center></div>
-  <h1 id="title"><a href="../index.html"> <center> 산서교회 </center></a></h1>
+  <h1 id="title"><a href="../index.html"> 산서교회 </a></h1>
   <link rel="stylesheet" href="../HeadStyle.css">
   <nav id = "topMenu" >
     <ul>
@@ -15,44 +14,29 @@
       <li><a class="menuLink" href="../community/indexC.html">커뮤니티</a></li>
     </ul>
   </nav>
+
+  <link rel="stylesheet" href="NewsStyle.css">
+  <script type="text/javascript" src="NewsScript"></script>
 </head>
 
 <body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="../turnjs4/lib/turn.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('#book').turn();
-});
-</script>
 
-<style>
-    #book{
-      width:800px;
-      height:600px;
-      left:50%;
-      margin-left: -400px;
-      float:left;
-    }
-
-    #book .turn-page{width: 300px; height:300px; background-color:pink;}
-
-    .page{
-      width:100%;
-      height: 100%;
-    }
-</style>
-
-  <div>
-    6월7일 주보
+<div class="slider-wrap">
+<div class="slider" id="slider">
+  <div class="holder">
+    <div class="slide" id="slide-0"><span class="temp"></span></div>
+    <div class="slide" id="slide-1"><span class="temp"></span></div>
+    <div class="slide" id="slide-2"><span class="temp"></span></div>
+    <div class="slide" id="slide-3"><span class="temp"></span></div>
   </div>
-
-    <div id="book">
-        <div class='page'><img class="page" src="week1.jpg"></div>
-        <div class='page'><img class="page" src="week2.jpg"></div>
-        <div class='page'><img class="page" src="week3.jpg"></div>
-        <div class='page'><img class="page" src="week4.jpg"></div>
-    </div>
+</div>
+<nav class="slider-nav">
+<a href="#slide-0" class="active">Slide 0</a>
+<a href="#slide-1" >Slide 1</a>
+<a href="#slide-2" >Slide 2</a>
+<a href="#slide-3" >Slide 3</a>
+</nav>
+</div>
 
 </body>
 
