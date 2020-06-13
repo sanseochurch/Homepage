@@ -10,31 +10,36 @@
   box-sizing: border-box;
 
 }
+html,body{
+	height:100%;
+}
 
-#top{
-  margin-top:100px;
+#pastor{
+	margin-top:50px;
+	float:left;
 }
 
 #name{
   width:290px;
   margin: 0;
   padding:0;
+	position:absolute;
+	left:700px;
+	top:200px;
   text-align: center;
-  float:right;
-  margin-right:400px;
-  margin-top: 70px;
   background-color:rgba(255,100,100,0.5);
   line-height:40%;
   padding-bottom: 4px;
 }
 
 #p01{
-  width:700px;
+  width:500px;
   height: 300px;
-  position:absolute;
-  top:300px;
+	position:absolute;
+	left:600px;
+	top:300px;
   text-align: center;
-  left: 40%;
+	float:left;
   border:1px solid;
 }
 
@@ -43,7 +48,7 @@
   grid-gap: 1rem;
   padding: 1rem;
   max-width: 1300px;
-  margin: 30px auto;
+  margin: 600px auto;
   font-family: var(--font-sans);
 }
 @media (min-width: 600px) {
