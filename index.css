@@ -1,0 +1,43 @@
+
+html,body{
+  width: 100%;
+  height:100%;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+}
+#first{
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('cross.jpg');
+  background-size: cover;
+  height: 80%;
+  padding-top:80px;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  display:grid;
+  grid-template-columns: repeat(4,25%);
+}
+
+.item{
+  min-width: 200px;
+  text-align: center;
+  padding: 10px;
+  background-color: #202020;
+  color:white;
+  padding-top: 30px;
+}
+
+
+.t1{
+  text-align: center;
+  color:white;
+}
+
+.t2{
+  min-width: 200px;
+  height: 200px;
+  padding-top: 50px;
+  color:white;
+}
