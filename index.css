@@ -7,10 +7,13 @@ html,body{
   background-color: #000000;
 }
 #first{
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('cross.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('church.jpg');
   background-size: cover;
   height: 80%;
   padding-top:80px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
 }
 
 .container{
@@ -27,6 +30,7 @@ html,body{
   background-color: #202020;
   color:white;
   padding-top: 30px;
+  font-size:
 }
 
 
