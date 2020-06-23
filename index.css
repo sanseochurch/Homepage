@@ -7,7 +7,7 @@ html,body{
   background-color: #000000;
 }
 #first{
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('church.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://github.com/sanseochurch/Homepage/blob/master/church.JPG?raw=true');
   background-size: cover;
   height: 80%;
   padding-top:80px;
