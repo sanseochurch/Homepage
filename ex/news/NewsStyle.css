@@ -1,10 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
+/*
 .main{
 	display:grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 10px;
 	grid-auto-rows: minmax(400px, auto);
+}
+*/
+
+.top{
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 100px;
 }
 
 /*////////////////////////////////////////////sct_01//////////////////////////////////////////////*/
@@ -111,10 +121,12 @@
 
 /*//////////////////////////////////// sct03 //////////////////////////////////////////////////////////////*/
 .sct{
-	padding-top: 100px;
-
-	grid-column:2/4;
+	position:absolute;
 	text-align: center;
+	width:800px;
+	left: 50%;
+	margin-left: -400px;
+
 }
 div.gallery {
   margin: 5px;
